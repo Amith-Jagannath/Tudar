@@ -25,3 +25,27 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+/* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap");
+.cursive {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  font-size: 30px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+
+.flexBetween {
+  @apply flex justify-between items-center;
+}
+
+.flexStart {
+  @apply flex items-center justify-start;
+}

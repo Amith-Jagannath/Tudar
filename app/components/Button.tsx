@@ -1,41 +1,20 @@
 import { MouseEventHandler } from "react";
 import Image from "next/image";
+import { title } from "process";
 type Props = {
-  title: string;
-  leftIcon?: string | null;
-  rightIcon?: string | null;
   handleClick?: MouseEventHandler;
-  isSubmitting?: boolean;
+  title: string;
   type?: "button" | "submit";
-  bgColor?: string;
-  textColor?: string;
 };
 
-const Button = ({
-  title,
-  leftIcon,
-  rightIcon,
-  handleClick,
-  isSubmitting,
-  type,
-  bgColor,
-  textColor,
-}: Props) => {
+const Button = ({ handleClick, type, title }: Props) => {
   return (
     <button
       type={type || "button"}
-      disabled={isSubmitting}
-      className={`flexCenter gap-3 px-4 py-3 bg-purple-800"
-      ${textColor ? textColor : "text-white"}
-     ${
-       isSubmitting ? "bg-black/50" : bgColor ? bgColor : "bg-primary-purple"
-     } rounded-xl text-sm font-medium max-md:w-full
-      `}
+      className="flexCenter gap-3 px-4 py-3 bg-violet-500 rounded-xl text-sm font-medium max-md:w-full text-white"
       onClick={handleClick}
     >
-      {/* {leftIcon && <Image src={leftIcon} width={14} height={14} alt="left" />}
       {title}
-      {rightIcon && <Image src={rightIcon} width={14} height={14} alt="left" />} */}
     </button>
   );
 };
