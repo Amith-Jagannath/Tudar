@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "Flexify",
+  title: "Tudar",
   description: "developing project",
 };
 
