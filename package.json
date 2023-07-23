@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.15",
     "@types/jsonwebtoken": "^9.0.2",
+    "@types/next-auth": "^3.15.0",
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -21,7 +22,7 @@
     "graphql-request": "^6.1.0",
     "jsonwebtoken": "^9.0.0",
     "next": "13.4.7",
-    "next-auth": "^4.22.1",
+    "next-auth": "^4.22.3",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -29,6 +30,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@grafbase/sdk": "^0.2.1"
+    "@grafbase/sdk": "^0.2.1",
+    "eslint": "^8.45.0"
   }
 }

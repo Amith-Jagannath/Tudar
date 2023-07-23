@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth/next";
 import { NextAuthOptions, User } from "next-auth";
-import { AdapterUser } from "next-auth/adapters";
+import { AdapterUser } from "next-auth/AdapterUser";
 import GoogleProvider from "next-auth/providers/google";
 import jsonwebtoken from "jsonwebtoken";
 import { JWT } from "next-auth/jwt";
@@ -8,6 +8,9 @@ import { SessionInterface, UserProfile } from "@/common.types";
 import { createUser } from "./actions";
 
 import { getUser } from "./actions";
+
+
+
 
 export const authOptions: NextAuthOptions = {
   providers: [
